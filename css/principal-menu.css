@@ -1,0 +1,80 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --hospital-green: #ACD9B2;
+    --text-input-field: #F7F7F7;
+    --dark: #232830;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+.main-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 25px;
+    place-content: center;
+}
+
+.product-cards {
+    width: 240px;
+}
+
+.product-cards > img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-top: 15px;
+}
+
+.product-info figure {
+    margin: 0;
+}
+
+.product-info p {
+    margin: 0;
+}
+
+.product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.product-info div p:nth-child(2) {
+    font-size: 1.4rem;
+    color: var(--very-light-pink);
+}
+
+@media (max-width: 640px) {
+    .main-cards-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+        gap: 15px;
+    }
+
+    .product-cards {
+        width: 140px;
+    }
+    
+    .product-cards > img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
