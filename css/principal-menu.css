@@ -18,6 +18,50 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+.main-newpass-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    box-shadow: 0px 1px 10px rgb(219, 219, 219);
+}
+
+.main-nav-left {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.main-nav-left a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    font-size: 1.6rem;
+}
+
+.main-nav-left img {
+    width: 150px;
+}
+
+.main-nav-left .main-nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    min-width: 330px;
+}
+
+.main-nav-right {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.main-nav-right a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--hospital-green);
+}
+
 .main-cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
