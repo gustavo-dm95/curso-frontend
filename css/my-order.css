@@ -23,20 +23,74 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+.main-container {
+    width: 100%;
+    min-width: 320px;
+    display: grid;
+    place-items: center;
+}
+
+.main-container-order {
+    width: 90%;
+    height: 100vh;
+    max-width: 600px;
+}
+
+.main-container-order h1 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
 .main-container-cards {
     display: grid;
     grid-template-rows: 1fr;
-    width: 90%;
-    margin: 0 auto;
 }
 
 .main-container-cards figure img {
     width: 100px;
     height: 100px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .main-container-info {
-    margin: 0 auto;
-    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: var(--text-input-field);
+    border-radius: 8px;
+}
+.main-container-info div p {
+    font-size: 1.4rem;
+}
+
+.main-container-info div p:first-child {
+    font-weight: bold;
+}
+
+.main-container-info div p:nth-child(2) {
+    color: var(--very-light-pink);
+    font-weight: 300;
+}
+
+.main-cards-info {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-cards-info p {
+    font-size: 1.4rem;
+}
+
+.main-cards-info p:nth-child(2) {
+    font-weight: 300;
+    color: var(--very-light-pink);
+}
+
+.main-cards-info p:nth-child(3) {
+    font-weight: bold;
 }
